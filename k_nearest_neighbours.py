@@ -30,7 +30,7 @@ if __name__ == "__main__":
                 euclid_distance = np.sqrt(sum_squared_distances)
                 similarities.append((euclid_distance, class_2))
         
-            # Sort by the closest distance
+            # Sort by the closest distance (lowest distance first, i.e., best match first)
             similarities.sort(key=lambda x: x[0])
     
             # Select the K nearest
